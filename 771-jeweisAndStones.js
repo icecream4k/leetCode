@@ -16,4 +16,4 @@ var numJewelsInStones = function(jewels, stones) {
     };
     return resultNumber;
 };
-numJewelsInStones('z','ZZ')
+console.log(numJewelsInStones('z','ZZ'));

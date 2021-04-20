@@ -1,6 +1,5 @@
 var maximumWealth = function(accounts) {
     var temArray = [];
-
     function sum(arr) {
         return arr.reduce((p, c) => {
             return p + c
@@ -16,4 +15,4 @@ console.log(maximumWealth([
     [2, 8, 7],
     [7, 1, 3],
     [1, 9, 5]
-]));
+]))
