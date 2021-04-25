@@ -10,4 +10,4 @@ var reverseLeftWords = function(s, n) {
     let resultStr = temStr2 + temStr1
     return resultStr
 };
-reverseLeftWords('lrloseumgh', 6)
+console.log(reverseLeftWords('lrloseumgh', 6));

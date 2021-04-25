@@ -20,4 +20,4 @@ var runningSum = function(nums) {
     }
     return resultArray
 };
-runningSum([1, 2, 3, 4])
+console.log(runningSum([1, 2, 3, 4]));

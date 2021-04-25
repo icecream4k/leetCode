@@ -12,35 +12,10 @@ var lengthOfLongestSubstring = function(s) {
     for (let i = 0; i < s.length; i++) {
         if (temString.indexOf(s[i]) != -1) {
             // 判断在不在temString里面 **
-            console.log(temString.indexOf(s[i]));
+            return temString.indexOf(s[i])
         } else {
             continue
         }
-        console.log('-------');
     }
-
-
-
-
-
-
-
-
-
-    // var temArray = [];
-    // for (var i = 0; i <= s.length - 1; i++) {
-    //     for (var u = i + 1; u <= s.length - 1; u++) {
-    //         if (s[i] === s[u]) {
-    //             break
-    //         } else {
-    //             var resultStr = s.slice(i, u)
-    //             temArray.push(resultStr)
-    //         }
-    //     }
-    // };
-    // console.log(temArray);
-    // for(let i = 0;i<temArray.length;i++){
-    //     console.log(temArray[i]);
-    // }
 }
-lengthOfLongestSubstring('pwwkew')
+console.log(lengthOfLongestSubstring('pwwkew'));

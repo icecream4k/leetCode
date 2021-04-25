@@ -18,5 +18,4 @@ var twoSum = function(nums, target) {
         }
     }
 }
-let result = twoSum(nums = [2, 7, 11, 15], target = 9)
-console.log(result);
+console.log(twoSum(nums = [2, 7, 11, 15], target = 9));
