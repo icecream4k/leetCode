@@ -11,6 +11,7 @@
 // 输入：items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], ruleKey = "color", ruleValue = "silver"
 // 输出：1
 // 解释：只有一件物品匹配检索规则，这件物品是 ["computer","silver","lenovo"] 。
+
 var countMatches = function(items, ruleKey, ruleValue) {
     let tempArrayType = new Array;
     let tempArrayColor = new Array;
