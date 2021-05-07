@@ -15,20 +15,23 @@
  * @return {number[]}
  */
 var decompressRLElist = function(nums) {
-    let tempStartNumber = null;
-    let tempEndNumber = null;
-    let tempArray = new Array;
-    for (let i = 1; i < nums.length; i++) {
-        if (i % 2 !== 0) {
-            tempStartNumber = nums[i]
+    let zhixingArray = new Array;
+    let yuanshiArray = new Array;
+    // 取数字
+    for (let i = 0; i < nums.length; i++) {
+        if (i % 2 != 0) {
+            yuanshiArray.push(nums[i])
         } else {
-            tempEndNumber = nums[i]
-            for (let n = 0; n < tempStartNumber; n++) {
-                tempArray.push(tempEndNumber)
-                console.log(`正在执行中 - ${tempStartNumber}  -- ${tempEndNumber}`);
-            }
+            zhixingArray.push(nums[i])
+        }
+    };
+    // 执行处理
+    let endArray = new Array // 最终的数组
+    for (let n = 0; n < zhixingArray.length; n++) {
+        for (let m = 0; m < zhixingArray[n]; m++) {
+            endArray.push(yuanshiArray[n])
         }
     }
-    console.log(tempArray);
+    return endArray
 };
-decompressRLElist([1, 2, 3, 4])
+decompressRLElist([1, 1, 2, 3])
