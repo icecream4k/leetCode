@@ -15,9 +15,9 @@
  * @return {string}
  */
 var interpret = function(command) {
-
-    command = command.replace(/()/g, 'o').replace('(al)', 'al')
-
+    for (let i = 0; i < command.length; i++) {
+        command = command.replace('()', 'o').replace('(al)', 'al')
+    };
     return command
 };
 console.log(interpret("G()()()()(al)"));
