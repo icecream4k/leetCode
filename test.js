@@ -1,12 +1,11 @@
-let obj = {}
-let nameArray = ['han','zhang','liu','wu']
-let ageArray = [10,14,15,41]
-let resArray = []
-// for(let i = 0;i<nameArray.length;i++){
-//     obj['name'] = nameArray[i]
-//     obj['age'] = ageArray[i]
-//     console.log(obj);
-//     resArray.push(obj)
-//     obj = {}
-// }
-console.log(obj);
+var achearr = [1, 2, 3, 4];
+var bchearr = [];
+//方法1：
+for (var i = 0; i <= achearr.length; i++) {
+    var a = i;
+    var b = i + 1;
+    bchearr.sort(function(a, b) {
+        return a - b
+    })
+}
+console.log(bchearr)
