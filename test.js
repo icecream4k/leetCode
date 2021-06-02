@@ -1,11 +1,9 @@
-var achearr = [1, 2, 3, 4];
-var bchearr = [];
-//方法1：
-for (var i = 0; i <= achearr.length; i++) {
-    var a = i;
-    var b = i + 1;
-    bchearr.sort(function(a, b) {
-        return a - b
-    })
+let obj = {
+    name: 'han',
+    age: 15
 }
-console.log(bchearr)
+var a = JSON.parse(JSON.stringify(obj));
+let b = JSON.parse(JSON.stringify(obj));
+b.age += 1
+console.log(a);
+console.log(b);
