@@ -1,6 +1,8 @@
 let obj = {
     name: 'han',
-    age: 19
+    age: 18
 }
-obj.gender = 'boy'
-console.log(obj);
+
+for(let i in obj){
+    console.log(i);
+}
