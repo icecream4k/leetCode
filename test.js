@@ -1,5 +1,7 @@
-let a = [];
-let bn = 1;
-let cn = 1;
-a.push(bn,cn)
-console.log(a);
+let b = [];
+let c = [1,2,3];
+if(c.length == 0){
+    console.log('y');
+}else{
+    console.log('n');
+}
